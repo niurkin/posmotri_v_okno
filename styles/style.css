@@ -47,10 +47,27 @@ ol {
   column-gap: 30px; 
 }
 
+.result {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.result__video-container {
+  width: 711px;
+  height: 386px;
+}
+
+.result__video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Надо позже проверить */
+  align-items: flex-start;
 }
 
 .content__details {
@@ -63,4 +80,23 @@ ol {
 .content__list {
   height: 534px;
   overflow: auto;
+}
+
+.content__list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
 }

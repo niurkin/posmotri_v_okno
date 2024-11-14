@@ -95,10 +95,7 @@ ol {
   display: flex;
   column-gap: 5px;
   width: fit-content;
-}
-
-.search-form__label-text {
-  line-height: 19.5px;
+  align-items: center;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -209,7 +206,7 @@ ol {
   position: relative;
   height: 298px;
   overflow: auto;
-  padding: 2px;
+  padding: 0 2px 2px;
 }
 
 .content__list-item:not(:last-child) {
@@ -254,6 +251,10 @@ ol {
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
 }
 
 .content__video-card-description {

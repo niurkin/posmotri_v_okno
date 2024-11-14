@@ -12,13 +12,13 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  inline-size: 1200px;
-  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 h1,
@@ -42,10 +42,10 @@ ol {
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 }
@@ -53,8 +53,8 @@ ol {
 .content {
   display: flex;
   align-items: flex-end;
-  width: 1140px;
   column-gap: 30px;
+  width: 1140px;
 }
 
 .result {
@@ -70,8 +70,8 @@ ol {
 }
 
 .result__video {
-  height: 100%;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -86,15 +86,15 @@ ol {
 }
 
 .search-form__fieldset-title {
+  margin-bottom: 5px;
   font-weight: 400;
   font-size: 18px;
-  margin-bottom: 5px;
 }
 
 .search-form__label {
   display: flex;
-  width: fit-content;
   column-gap: 5px;
+  width: fit-content;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -103,25 +103,25 @@ ol {
 }
 
 .search-form__label:not(:has(.search-form__textfield)):hover {
-  cursor: pointer;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .search-form__textfield {
   width: 225px;
-  background: transparent;
+  border: 1px solid currentColor;
+  border-right: none;
+  border-left: none;
   color: #fff;
   font-family: inherit;
   font-size: 18px;
-  border: 1px solid currentColor;
-  border-left: none;
-  border-right: none;
+  background: transparent;
   appearance: none;
 }
 
 .search-form__textfield:active {
-  border-left: 1px solid currentColor;
   border-right: 1px solid currentColor;
+  border-left: 1px solid currentColor;
 }
 
 .search-form__textfield:focus {
@@ -150,18 +150,18 @@ ol {
 }
 
 .button {
-  background: transparent;
+  border: 1px solid currentColor;
   color: inherit;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
-  border: 1px solid currentColor;
   line-height: 30px;
+  background: transparent;
 }
 
 .button:hover {
-  cursor: pointer;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .button:active {
@@ -178,14 +178,14 @@ ol {
 }
 
 .search-form__submit-button {
-  width: 194px;
   align-self: flex-end;
+  width: 194px;
 }
 
 .content__details {
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
+  flex-grow: 1;
   row-gap: 26px;
 }
 
@@ -193,8 +193,8 @@ ol {
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
-  text-transform: uppercase;
   line-height: 70.5px;
+  text-transform: uppercase;
 }
 
 .content__accent {
@@ -213,9 +213,9 @@ ol {
 
 .content__card-link {
   display: block;
-  text-decoration: none;
-  color: #fff;
   margin: 2px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .content__card-link:hover {
@@ -246,9 +246,9 @@ ol {
 
 .content__video-card-title {
   font-family: Oswald, sans-serif;
-  text-transform: uppercase;
-  font-size: 30px;
   font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 .content__video-card-description {

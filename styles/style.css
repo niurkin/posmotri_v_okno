@@ -97,6 +97,10 @@ ol {
   width: fit-content;
 }
 
+.search-form__label-text {
+  line-height: 19.5px;
+}
+
 .search-form__label:has(:focus-visible) {
   outline: 1px solid currentColor;
   outline-offset: 1px;
@@ -205,6 +209,7 @@ ol {
   position: relative;
   height: 298px;
   overflow: auto;
+  padding: 2px;
 }
 
 .content__list-item:not(:last-child) {
